@@ -1,14 +1,18 @@
 #===============================================#
 # Scripts by Python						        #
-# Переворот строки                              #
+# Сумма всех чисел от введенного числа          #
 #										        #
 # (C) 2022 Nogtev Vadim, Moscow, Russia         #
 # Released under GNU Public License (GPL)       #
 # email vadimnogtev16@gmail.com                 #  
 #===============================================#
 
-string = input()
-new_string = ''
-for i in string:
-    new_string = string[::-1]
-print(new_string)
+N = int(input())
+#your code goes here
+i = 0
+result = []
+while i != N+1:
+    result.append(i)
+    i += 1
+print(sum(result))
+
